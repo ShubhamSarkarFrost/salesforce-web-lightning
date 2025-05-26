@@ -1,6 +1,3 @@
-# salesforce-web-lightning
-The following repository contains my learning of salesforce lightning components 🌩️
-
 # ⚡ Salesforce Lightning Web Components CLI Project
 
 ![Salesforce](https://img.shields.io/badge/Salesforce-LWC-blue.svg)
