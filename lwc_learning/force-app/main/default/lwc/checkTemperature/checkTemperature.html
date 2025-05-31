@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Check Temperature Conditional">
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+                type="number" 
+                label="Enter temperature" 
+                value={temperature}
+                onchange={handleInputChange}>
+            </lightning-input>
+
+            <lightning-button 
+                variant="brand" 
+                label="Show Temperature" 
+                title="Show Temperature" 
+                onclick={handleButtonClick} 
+                class="slds-var-m-left_x-small">
+            </lightning-button>
+
+            <template if:true={isVisible}>
+                <div>The temperature entered is too hot 🥵</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Shopping Cart">
+        <div class="slds-var-m-around_medium">
+            <template if:true={products}>
+                <template for:each={products} for:item="product">
+                    <div key={product.id} class="slds-box slds-var-m-bottom_small">
+                        <p><strong>Product:</strong> {product.name}</p>
+                        <p><strong>Price:</strong> ${product.price}</p>
+                        <p><strong>Quantity:</strong> {product.quantity}</p>
+                    </div>
+                </template>
+            </template>
+            <template if:false={products}>
+                <p>Your cart is empty.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
