@@ -1,0 +1,21 @@
+<template>
+    <!--Example of Simple Data-->
+    <c-lwc-child-component 
+        message={parentMessage}
+        record-id={parentRecordId}>
+    </c-lwc-child-component>
+    
+    <!--Example of Complex Data-->
+    <div class="slds-var-m-bottom_medium"></div>
+    <c-p2c-carousel-component carousel-details={carouselData}></c-p2c-carousel-component>
+
+
+    <!--Example of passing data with action-->
+    <div class="slds-var-m-bottom_medium"></div>
+    <lightning-card title="parent to child component data action">
+        <div class="slds-var-m-bottom_medium">
+              <lightning-input type="number" label="Enter Percentage %" onkeyup={changeHandler} value={percetage}></lightning-input>
+         <c-p2c-progress-component progress-value={percentage}></c-p2c-progress-component>
+        </div>
+    </lightning-card>
+</template>
